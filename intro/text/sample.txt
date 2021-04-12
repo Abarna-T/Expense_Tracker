@@ -1,0 +1,71 @@
+
+#colors#
+
+    html colours in which predefined name can be mentioned 
+rgb- red green blue rgb(255,255,255) max of r,g,b
+    ->main dis is we have to know the exact value 
+   -> if all the values are 0 then black
+   -> if all vlaues are 255 then white 
+   ->if u have eqaul value on all we get shades of grey
+    -> values can be inserted by decimal value 
+hsl - hue, saturation, and lightness.
+rgba-> red,green,blue,alpha 
+    alpha for transperancy (0 to 1) values.
+    0.0 full transparent,1.0 null transparent
+HEX color 
+    #rrggbb 
+     values from 0 to 9 and A to F 
+    for shades of gray all values must be same eg:#404040
+
+hsl
+    hue is bassically a colour wheel 0 to 360 degree 
+    0 red 120 deg 240 blue 
+    for grey shades hue set to 0,saturation should be 0%,lightness depends on u,we can also use alpha for transparency
+hsla which is extension of hsl but increases the opacity 
+
+#link tag#
+
+<a href=""></a>
+target attribute will specify when the link has to be opened
+_self-> open the tab in the same table 
+_blank->open the new tab & move to the particualr link 
+_parent->similar to self 
+_top->open the content in full body 
+
+when we click a image if we want to navigate
+< a href=""><img src=""></a>
+<a href="mailto:">Email</a>
+
+#images#
+<img src="" alt="" width="" height="">
+width can be mentioned either 400px||400 
+.apng format 
+.gif
+.ico,.cur,.jpeg 
+.png ,.svg
+
+image map->refer
+shapes in map are rect,circle,poly,
+background-repeat:no-repeat
+background-size:cover ||we can use the size (x,y) as (100%,100%)// it extends the img to the viewport size i.e)full page
+background-attachments:fixed // img gets fixed & contents gets scrolled
+
+#picture 
+<picture>
+</picture>
+
+#table
+<table>
+<tr>
+    <th></th>
+</tr>
+<tr>
+    <td></td>
+</tr>
+<tr>
+    <th></th>
+</tr>
+
+
+
+-->

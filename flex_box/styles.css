@@ -1,0 +1,38 @@
+body{
+    background: purple;
+}
+::selection{
+    color:tomato;
+    background-color: yellow;
+}
+#parent{
+    background-color: darkolivegreen;
+    display:flex; /* enable the fles concepts */
+    /* flex-direction: row;
+    in order to view all the items items we can wrap */
+    /* flex-wrap:wrap; */
+    /* width:500px; */
+    /* in flex-flow both flex-direction & flex-wrap is combined as shorthand  */
+    flex-flow:row wrap;
+
+    /* if we apply flex 
+    to parent it si inherited by child
+    i.e)it will wrap the content if it is 
+    beyond viewport heigths ang width */
+
+    justify-content: space-evenly;
+
+    /* responsive web design */
+    align-content: cover;
+    /* for centering the content */
+
+}
+#parent > div{
+    background-color: darksalmon;
+    color:white;
+    /* background-color: yellow; */
+    margin:10px;
+    padding:20px;
+    width:50px;
+
+}

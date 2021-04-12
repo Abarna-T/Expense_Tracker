@@ -1,0 +1,59 @@
+a:link{
+    background-color: blue;
+    color:black;
+}
+a:visited{
+    background-color: darkorange;
+}
+a:active{
+    background-color: blueviolet;
+}
+a:hover{
+    background-color: chartreuse;
+}
+a#twitter:hover{ /*for class*/
+    background-color: cadetblue;
+}
+a.twitter:hover{/*for ids*/
+    background-color: deeppink;
+}
+
+/*pseudo class on div*/
+div:hover{
+    
+    background-color: gold;
+}
+div:active{
+    background-color: greenyellow;
+}
+/*hover paragraph
+div#hover_para:hover p{
+    color:blue;
+    display:block;
+}
+p{     for tooltip in div
+    display:none;
+    background-color: greenyellow;
+}*/
+
+p:first-child{
+    border:5px solid purple;
+    color:white;
+    background-color: royalblue;
+}
+i strong:first-child{
+    border:2px solid red;
+}
+i:first-child strong{
+    background-color: teal;
+}
+div:lang(use){
+    text-transform: capitalize;
+    background-color: violet;
+}
+p:first-of-type{
+    outline:2px solid tomato;
+}
+
+
+

@@ -1,0 +1,33 @@
+/*div{
+    width:100px;
+    height:100px;
+    background-color: blueviolet;
+    transition: width 3s,height 4s;
+    width transistion takes 3seconds
+    transition-delay: 1s;
+    delay takes after 5sec
+    transition-timing-function: ease;
+    starts slow move fast ends slow 
+}
+div:hover{
+margin-top:400px;
+    margin-left:400px;
+    background-color: chartreuse;
+transform:rotate(180deg);
+}*/
+#_1{
+    background-color: chartreuse;
+    width:400px;
+    height: 400px;
+    animation-name:abarnaAnimation;
+}
+@keyframes abarnaAnimation{
+    from
+    {
+        background-color: chartreuse;
+    }
+    to
+    {
+        background-color: pink;
+    }
+}

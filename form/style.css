@@ -1,0 +1,131 @@
+/* Step 1: Fonts.google.com -> Open Sans */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+/* Step 10 continues...  */
+:root {
+    --success-color: #2ecc71;
+    --error-color:  #e74c3c;
+}
+
+
+/* Step 2 : * box sizing */
+
+* {
+    box-sizing: border-box;  
+}
+
+/* Step 3 : body and centering (horizontal + vertical)*/
+body {
+    background-color: #f9fafb;
+    font-family: 'Open Sans', 'sans-serif';
+    /* display set to flex since it will have all child elements as flex items which makes it easier to center the same  */
+    display: flex;
+
+    /* Horizontal Centering */
+    align-items : center;
+    justify-content: center;
+
+    /* Vertical Centering: viewport height */
+    min-height: 100vh;
+    margin: 0;
+}
+
+
+/* Step 4: container which wraps the entire content */
+
+.container {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    width: 400px;
+}
+
+/* Step 5: h2 inside form  */
+h2{
+    text-align: center;
+    margin: 0 0 20px;
+}
+
+/* Step 6: form  */
+.form {
+    padding: 30px 40px;
+}
+
+/* Step 7: form-control  */
+.form-control {
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.form-control label {
+    color: #777;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-control input {
+    border: 2px solid #f0f0f0;
+    border-radius: 4px;
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+}
+
+/* Step 8 : Get rid of the outline which happens in the focus state */
+
+.form-control input:focus{
+    outline : 0;
+    border-color: #777;
+}
+
+.form-control.success input{
+    /* border-color: #2ecc71; */
+    border-color: var(--success-color);
+}
+
+.form-control.error input{
+    /* border-color: #e74c3c; */
+    border-color: var(--error-color);
+}
+
+/* Step 9 : Make the small tag content error message to red */
+
+.form-control small {
+    /* color: #e74c3c; */
+    color: var(--error-color);
+    /* Position it within the form control */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    /* initially the visibility should be invisible */
+    visibility : hidden;
+
+    /* Normally people would prefer display: none option which basically collapses the layout nearby. SO we stick with visibility: hidden */
+    /* Dont uncomment it : remove this..display: none; */
+}
+
+.form-control.error small {
+    visibility: visible;
+}
+
+/* Step 10: Create  css varibles on top for colors */
+
+/* Change all the color values with var name .. */
+
+
+/* Step 11: form button */
+
+.form button {
+    cursor : pointer;
+    background-color: #3498db;
+    border: 2px solid #3498db;
+    border-radius: 4px;
+    color: #fff;
+    display: block;
+    padding: 10px;
+    margin-top: 20px;
+    width: 100%;
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validator</title>
+    
+    <!-- Step 1 Linking style.css-->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <!-- Step 2  Creating a div with class container and another div with id form and class form. Form doesnt need action since we are not submitting it-->
+    <div class="container">
+        <form id="form" class="form">
+            <!-- id will grab in JS and class we will use it in css. we can also use the just id / class for both -->
+                <!-- Step 3 : h2 tag  -->
+                <h2>Register With Us</h2>
+                <!-- Step 4 : Create a div tag with class form-control -->
+                <div class="form-control">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" placeholder="Enter username">
+                    <small>Error message</small>
+                </div>
+
+                <!-- Step 5: Repeat the above formcontrol div tag to required numbers. -->
+                <div class="form-control">
+                    <label for="email">Email</label>
+                    <input type="text" id="email" placeholder="Enter email">
+                    <small>Error message</small>
+                </div>
+
+                <div class="form-control">
+                    <label for="password">Password</label>
+                    <!-- Step 6 : We could change the type="text" to type="email" but since it will take the default validation for email and we want our own validation we have type as text.-->
+                    <input type="password" id="password" placeholder="Enter Password">
+                    <small>Error message</small>
+                </div>
+
+                <div class="form-control">
+                    <label for="password2">Confirm Password</label>
+                    <input type="password" id="password2" placeholder="Enter Password again">
+                    <small>Error message</small>
+                </div>
+
+                <!-- Step 7: Submit button -->
+                <button type="submit">Submit</button>
+
+                <!-- Step 8: View the HTML output in live server. Explain Port:5500 below bottom-right corner -->
+            </form>
+
+    </div>
+
+
+    <!-- Step 1 Linking script.js-->
+    <!-- <script src="script.js"></script> -->
+    <!-- Refactored JS Code -->
+    <script src="refactoredJSCode.js"></script>
+    
+</body>
+</html>

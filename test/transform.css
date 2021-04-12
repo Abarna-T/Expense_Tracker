@@ -1,0 +1,50 @@
+._transform{
+    background: orange;
+    color:white;
+    padding:20px;
+    transform: translate(500px,100px);
+    width:50px;
+    /*translate move from 100px in x axis,200px in y it moves to some position
+    margin-left:100px;
+    margin-top:200px;*/
+    /*transform: translate(-100px,-200px);
+   if we do it it will be in same position
+  */
+
+}
+button{
+    color:white;
+    background: paleturquoise;
+    width:50px;
+padding:10px;
+}
+.rotate{
+    background: orange;
+    color:white;
+    padding:20px;
+    width:50px;
+    /*transform: translate(100px,200px);
+    translate move from 100px in x axis,200px in y it moves to some position*/
+    
+    transform: rotate(10deg);
+        /*if we do it it will be in same position*/
+
+}
+.rotate1{
+    background: orange;
+    color:white;
+    width:50px;
+    padding:20px;
+    /*transform: translate(100px,200px);
+    translate move from 100px in x axis,200px in y it moves to some position*/
+    
+    transform: rotate(-25deg);
+}
+._scale{
+    background: peru;
+    width:100px;
+    height: 100px;
+    transform: scale(2,3);
+    /*scale(1,1) means original size scaleX means width scaleY means height*/
+    
+}

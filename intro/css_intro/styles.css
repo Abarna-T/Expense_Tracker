@@ -1,0 +1,29 @@
+/*external stylying : 3rd priority*/
+/*
+selector{
+    css_propert:value;@
+}
+.colorMe{
+    color:purple;
+}
+.decorateMe{
+    text-decoration: underline;
+}*/
+div p{
+    /*descendent selector
+    it selects everything inside div ie)p tag inside div & section*/
+    color:red;
+}
+/* > child selector it selects only the child not yje descendent*/
+div > p{
+    /*it selects only the child of div*/
+    color:green;
+}
+/*adjacent sibiling selector*/
+div+p{
+    /* this will select only the first paragraph*/
+    /*it means div & p must be the adjacent ie)child which should be in order that div and then p*/
+    color:blue;
+}
+/*general sibiling selector ~*/
+div ~ p{color:chocolate;}
